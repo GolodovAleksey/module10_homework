@@ -1,8 +1,11 @@
 let task1 = () => {
-    let input = +prompt("Input a number");
-    if( typeof(input) == "number" && isFinite(input)){
+    let input = prompt("Input a number");
+    let inputValue = +input;
+    if( typeof(input) == "number" && isFinite(input) && input !== null){
         console.log( input %2 ? "Нетное" : "Четное" )
     } else{
         console.log("Упс, кажется, вы ошиблись")
     }
 }
+
+// Всё верно, но есть небольшая рекомендация, как можно улучшить ваш код: сейчас не учитывается вариант, когда пользователь не ввел никакого значения и нажал Отмена. Сейчас в таком случае выводится "четное", что не совсем правильно. Выше показала, как можно решить эту проблему.
