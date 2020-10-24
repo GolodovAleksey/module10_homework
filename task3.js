@@ -1,7 +1,3 @@
 let task3 = (word) => {
-    let reverseWord = [];
-    for(let i=word.length-1; i>=0; --i){
-		reverseWord.push(word[i]);
-    }
-	console.log(reverseWord.join(""));
+	console.log( word.split("").reverse().join(""));
 }
